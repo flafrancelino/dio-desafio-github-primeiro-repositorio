@@ -1,1 +1,19 @@
-O Git Bash � um terminal extendido para otimizar o uso do git.
+O Git Bash ж um terminal extendido para otimizar o uso do git.
+
+Os comandos mais usados:
+
+* **git init** Para inicializar o Git em um repositório.
+* **git remote -v** Exibe a localização (URL) do repositório remoto. 
+* **git remote add origin <URL>** : se você inicializou seu próprio repositório do git e deseja vinculá-lo a um repositório do GitHub, você precisa primeiro criá-lo no GitHub, copiar o URL gerado e usar esse comando com o URL do GitHub substituindo o "<URL>" . A partir daí, você pode adicionar arquivos, fazer commits das alterações, além de enviá-las com o push para o seu repositório remoto.
+* **git remote set-url origin <url>** Utilizado quando você precisa alterar algo do repositório remoto. Só tenha em mente que o repositório remoto será vinculado à conta de onde você o clonou. Logo, se você clonou esse repositório de outra pessoa, não conseguirá fazer o push para o GitHub até alterar a origin usando esse comando.
+* **git clone** seguido do URL do repositório é a maneira mais comum de clonar um repositório.
+* **git branch <nome>** cria uma nova branch (ramificação).
+* **git branch** lista todas as branches do repositório local.
+* **git checkout <name>** alterna para outra banch existente. 
+* **git checkout -b <name>**Você também pode usar esse comando para criar uma nova branch e imediatamente mudar para ela. A maioria das pessoas usa isso em vez de comandos separados de branch e checkout. 
+* **git merge <branch>** Se você fez muitas mudanças em uma branch, que vamos chamar de "develop", e se quiser fazer o _merge_ de seus arquivos da branch de volta ao **master**, você usa esse comando.
+* **git status**  Exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git. 
+* **git diff --stat**  Se quiser ver o quanto cada arquivo foi alterado. Mostra o número de linhas alteradas em cada arquivo.
+* **git commit -m <message>** Adiciona mensagem aos commits
+* **git pull origin <branch>**  se você está trabalhando com muitas pessoas, e se estiver em uma posição onde o repositório foi atualizado no GitHub, mas não mudou localmente, pode usar esse comando para receber as mudanças mais recentes da sua branch remota.
+* **git push origin <branch>** Atualiza o repositório remoto de acordo com o repositório local.
